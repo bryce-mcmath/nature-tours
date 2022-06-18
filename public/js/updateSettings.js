@@ -14,14 +14,12 @@ export const updateSettings = async (data, type) => {
     });
 
     if (res.data.status === 'success') {
-      console.log('success:', res);
       showAlert(res.data.status, 'Account info updated successfully!');
     } else {
-      console.log('error:', res);
       showAlert('error', res.data.message);
     }
   } catch (err) {
-    console.log('err:', err);
+    console.log(err);
     showAlert('error', err.response.data.message);
   }
 };

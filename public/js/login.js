@@ -13,17 +13,15 @@ export const login = async (email, password) => {
     });
 
     if (res.data.status === 'success') {
-      console.log('success:', res);
       showAlert(res.data.status, 'Logged in successfully!');
       setTimeout(() => {
         location.assign('/');
       }, 1000);
     } else {
-      console.log('error:', res);
-      showAlert(res.data.status, res.data.message);
+      showAlert('error', res.data.message);
     }
   } catch (err) {
-    console.log('err:', err);
+    console.log(err);
     showAlert('error', err.response.data.message);
   }
 };
@@ -40,7 +38,8 @@ export const logout = async () => {
     } else {
       showAlert('error', 'Error logging out! Please try again');
     }
-  } catch (error) {
+  } catch (err) {
+    console.log(err);
     showAlert('error', 'Error logging out! Please try again');
   }
 };
