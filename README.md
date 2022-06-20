@@ -6,7 +6,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Part of a course on MongoDB, mongoose, Node.js, and express, Natours is a fullstack application built using modern technologies and best practices. Visit it live ![here](https://cryptic-scrubland-11179.herokuapp.com/)
+Part of a course on MongoDB, mongoose, Node.js, and express, Natours is a fullstack application built using modern technologies and best practices. Visit it live [here](https://cryptic-scrubland-11179.herokuapp.com/)
 
 ## Table of contents
 
